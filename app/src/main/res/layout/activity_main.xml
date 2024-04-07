@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ccc5b9"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TVHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:textStyle="bold"
+        android:text="[ NOVA CHAT ]"
+        android:padding="10dp"
+        android:fontFamily="serif"
+        android:textColor="#7f5539"
+        android:background="@drawable/border" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:fadeScrollbars="true"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/chat_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/greeting_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:maxWidth="275dp"
+                            android:textColor="#7f5539" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:id="@+id/BTNClear"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/baseline_add_24"
+            android:background="@drawable/border"
+            android:layout_gravity="bottom"/>
+
+        <EditText
+            android:id="@+id/ETPrompt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="Enter a prompt here..."
+            android:inputType="textMultiLine"
+            android:minLines="1"
+            android:maxLines="5"
+            android:scrollbars="vertical"
+            android:padding="13dp"
+            android:fontFamily="serif"
+            android:textColor="#7f5539"
+            android:textColorHint="#7f5539" />
+
+        <ImageButton
+            android:id="@+id/BTNSend"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/baseline_send_24"
+            android:background="@drawable/border"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+</LinearLayout>
