@@ -137,7 +137,7 @@ class MainActivity : AppCompatActivity() {
                 // Create a GenerativeModel instance to fetch the response
                 val generativeModel = GenerativeModel(
                     modelName = "gemini-pro",
-                    apiKey = "AIzaSyDc1gSEYSptL5XrlkZcWxC6sJtT3-Y_XEg"
+                    apiKey = "API_KEY_HERE"
                 )
 
                 // Start animation to show "Generating response..." while waiting for the response
