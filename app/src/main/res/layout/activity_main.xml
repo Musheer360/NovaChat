@@ -111,6 +111,7 @@
             android:scrollbars="vertical"
             android:padding="13dp"
             android:fontFamily="serif"
+            android:textColor="#7B5737"
             android:textColorHint="#7B5737" />
 
         <ImageButton
