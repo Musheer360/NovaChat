@@ -1,7 +1,8 @@
 <!-- dimens.xml -->
 <resources>
-    <dimen name="chat_bubble_margin_start">0dp</dimen>
-    <dimen name="chat_bubble_margin_end">0dp</dimen>
-    <dimen name="chat_bubble_margin">0dp</dimen>
     <dimen name="chat_bubble_top_margin">8dp</dimen>
+    <dimen name="chat_bubble_bottom_margin">8dp</dimen>
+    <dimen name="chat_text_top_margin">4.5dp</dimen>
+    <dimen name="chat_text_bottom_margin">4.5dp</dimen>
+    <dimen name="keyboard_open_margin_bottom">10dp</dimen>
 </resources>

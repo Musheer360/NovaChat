@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#ccc5b9"
+    android:background="#CCC6BA"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
@@ -15,21 +15,25 @@
         android:id="@+id/TVHeading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="45sp"
+        android:textSize="46.5sp"
         android:gravity="center"
-        android:layout_margin="15dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:textStyle="bold"
         android:text="[ NOVA CHAT ]"
+        android:includeFontPadding="false"
         android:padding="10dp"
         android:fontFamily="serif"
-        android:textColor="#7f5539"
+        android:textColor="#7B5737"
         android:background="@drawable/border" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_weight="1"
         android:background="@drawable/border"
         android:fadeScrollbars="true"
@@ -55,9 +59,9 @@
                     android:orientation="vertical">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/border"
+                        android:background="@drawable/response_bubble"
                         android:orientation="vertical"
                         android:padding="10dp">
 
@@ -66,8 +70,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="serif"
-                            android:maxWidth="275dp"
-                            android:textColor="#7f5539" />
+                            android:textColor="#7f5539"
+                            android:layout_margin="4.5dp"
+                            android:textIsSelectable="true" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -75,17 +80,18 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/prompt_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginBottom="15dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp">
 
         <ImageButton
             android:id="@+id/BTNClear"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:src="@drawable/baseline_add_24"
             android:background="@drawable/border"
@@ -105,15 +111,14 @@
             android:scrollbars="vertical"
             android:padding="13dp"
             android:fontFamily="serif"
-            android:textColor="#7f5539"
-            android:textColorHint="#7f5539" />
+            android:textColorHint="#7B5737" />
 
         <ImageButton
             android:id="@+id/BTNSend"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
-            android:layout_marginEnd="15dp"
+            android:layout_marginEnd="10dp"
             android:src="@drawable/baseline_send_24"
             android:background="@drawable/border"
             android:layout_gravity="bottom"/>
